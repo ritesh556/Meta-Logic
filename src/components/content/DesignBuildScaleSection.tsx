@@ -2,11 +2,16 @@ import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import Box from '../ui/Box';
 
+interface Step {
+  title: string;
+  description: string;
+  side: 'left' | 'right'; // Restrict side to "left" or "right"
+}
 
 const DesignBuildScaleSection: React.FC = () => {
   const stepsRef = useRef<HTMLDivElement>(null);
 
-  const steps = [
+  const steps: Step[] = [
     {
       title: 'Ideate',
       description: "Let's brainstorm together and explore creative ideas.",
@@ -23,22 +28,18 @@ const DesignBuildScaleSection: React.FC = () => {
       side: 'left',
     },
     {
-        title:'Launch',
-        
+      title: 'Launch',
       description: `We'll meticulously prepare for a successful launch,
 ensuring a smooth transition from development to
 deployment.`,
       side: 'right',
-        
     },
     {
-        title:'Scale',
-        
+      title: 'Scale',
       description: `As your business grows, we'll work with you to
 scale your software and accommodate increasing
 demands.`,
       side: 'left',
-        
     },
   ];
 
@@ -81,7 +82,7 @@ demands.`,
             key={index}
             title={step.title}
             description={step.description}
-            side={step.side}
+            side={step.side} // Now strictly typed as "left" | "right"
           />
         ))}
       </motion.div>
