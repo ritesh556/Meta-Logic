@@ -1,54 +1,22 @@
-# React + TypeScript + Vite
+# Design Decisions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. Color Scheme
+You’ll notice the site is mainly designed with blue, red, and white. These colors aren’t just for aesthetics; they represent important values.  
+- **Blue** gives off a sense of trust and professionalism.  
+- **Red** brings energy and passion to the design.  
+- **White** helps everything feel fresh and balanced, letting the colors stand out without overwhelming the user.  
 
-Currently, two official plugins are available:
+## 2. Light Effect in the Home Area
+The light effect in the home section adds a dynamic touch. It’s subtle but sets the tone for what the website is all about—innovation. It’s like a gentle guide, drawing your attention to the key areas as soon as you land on the page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 3. Line Design with Left and Right Elements
+In the section **"Design, Build, and Scale Your Vision with Us,"** I used a horizontal line with left and right elements. It’s a simple but effective way to break up the content and make it easier to digest. The line also creates a sense of structure, helping the content flow naturally. It’s all about balance and making the experience feel smooth.
 
-## Expanding the ESLint configuration
+## 4. Our Achievements with Upward Number Animation
+For the **Our Achievements** section, I decided to add a number animation that goes up. It’s a fun way to show growth and progress. The rising numbers represent how far we’ve come, and it adds a little something extra to engage users as they see real-time stats.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 5. Services Section with Red Card Animation
+The **Services** section features a red card animation to highlight our offerings. The red here is meant to convey urgency and passion—traits we want to associate with our services. The animation makes each service stand out, drawing the user’s attention in a unique and memorable way.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 6. Sunset Animation in the About Us Section
+In the **About Us** section, there’s a sunset animation. It’s not just a pretty visual; it’s symbolic. The setting sun represents moments of reflection and new beginnings. It’s a calm and peaceful way to transition users into learning more about who we are and what we stand for. A subtle emotional connection that sets the mood for the rest of the story.
