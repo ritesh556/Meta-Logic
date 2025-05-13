@@ -4,7 +4,9 @@
 import './index.css'
 import Header from './components/layout/Header'
 import Home from './Pages/Home'
+
 import Footer from './components/layout/footer'
+import Services from './Pages/Services'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -12,7 +14,8 @@ function App() {
   return (
     <>
     <Header/>
-      <Home/>
+      {/* <Home/> */}
+      <Services/>
       <Footer/>
 
     </>
