@@ -17,7 +17,7 @@ const Services: React.FC = () => {
     {
       title: 'Custom Software Development',
       description: 'Tailored software solutions for your needs.',
-      icon: <CodeBracketIcon className="h-10 w-10 text-blue-500" />,
+      icon: <AcademicCapIcon className="h-10 w-10 text-blue-500" />,
     },
     {
       title: 'Web Development',
@@ -62,7 +62,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <div className="bg-blue-900 text-white py-16 px-8 mt-12">
+    <div className="bg-blue-900 text-white py-16 px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <ServiceCard
